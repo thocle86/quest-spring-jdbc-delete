@@ -17,6 +17,7 @@ public class WizardRepository {
         Connection connection = null;
         PreparedStatement statement = null;
         ResultSet resultSet = null;
+
         try {
             connection = DriverManager.getConnection(
                     DB_URL, DB_USER, DB_PASSWORD
@@ -43,6 +44,7 @@ public class WizardRepository {
         Connection connection = null;
         PreparedStatement statement = null;
         ResultSet resultSet = null;
+
         try {
             connection = DriverManager.getConnection(
                     DB_URL, DB_USER, DB_PASSWORD
@@ -72,6 +74,7 @@ public class WizardRepository {
             JdbcUtils.closeStatement(statement);
             JdbcUtils.closeConnection(connection);
         }
+        
         return null;
     }
 }
